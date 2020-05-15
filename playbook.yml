@@ -23,7 +23,7 @@
         src: web.rb
         backup: yes
         force: yes
-        dest: /home/vagrant
+        dest: /home/vagrant/web.rb
         mode: '0777'
     
     - name: enable and start service
