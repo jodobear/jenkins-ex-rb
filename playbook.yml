@@ -26,10 +26,10 @@
 
     - name: copy artifact
       copy:
-        src: ./web.rb
+        src: web.rb
         backup: yes
         force: yes
-        dest: "{{home_folder}}/deployment/web.rb"
+        dest: "{{home_folder}}/deployment/"
         mode: '0777'
     
     - name: enable and start service
