@@ -29,6 +29,7 @@ pipeline {
 
    stage('Copy file') {
      steps {
+       sh 'yum install scp'
        sh 'scp web.rb vagrant@10.10.50.4:~/doployment'
      }
    }
