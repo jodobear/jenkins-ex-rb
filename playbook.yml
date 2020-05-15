@@ -32,6 +32,10 @@
         dest: "{{home_folder}}/deployment/"
         mode: '0777'
     
+    - name: check contents
+      debug:
+      command: "ls {{home_folder}}/deployment"
+
     - name: enable and start service
       become: yes
       systemd:
