@@ -22,11 +22,6 @@
         state: directory
         mode: '0755'
 
-    - name: Remove file
-      file:
-        path: "{{home_folder}}/deployment/web.rb"
-        state: absent
-
     - name: copy artifact
       copy:
         src: web.rb
