@@ -1,8 +1,9 @@
 - hosts: all
   tasks:
     - name: Install ruby
+      become: yes
       yum: name=ruby state=present
-      sudo: true
+      
 
 
     - name: Install sinatra
