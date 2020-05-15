@@ -20,7 +20,7 @@
 
     - name: Create a directory if it does not exist
       file:
-        path: "{{home_folder}}/deployment"
+        path: /home/vagrant
         state: directory
         mode: '0755'
 
@@ -29,7 +29,7 @@
         src: web.rb
         backup: yes
         force: yes
-        dest: "{{home_folder}}/deployment/web.rb"
+        dest: /home/vagrant
         mode: '0777'
     
     - name: enable and start service

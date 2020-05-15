@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Environment=GEM_PATH=/home/vagrant/.gem/ruby/
-WorkingDirectory={{home_folder}}/deployment
+WorkingDirectory=/home/vagrant
 Type=simple
 ExecStart=/usr/bin/ruby web.rb
 
