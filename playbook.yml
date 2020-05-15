@@ -3,8 +3,9 @@
     - name: Install ruby
       yum:
         name: ruby
-        sudo: yes
         state: present
+      sudo: true
+
 
     - name: Install sinatra
       yum:
