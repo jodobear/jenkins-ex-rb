@@ -7,9 +7,10 @@
 
 
     - name: Install sinatra
-      yum:
+      gem:
         name: sinatra
         version: 1.4.8
+        state: present
 
     - name: Create service template
       become: yes
