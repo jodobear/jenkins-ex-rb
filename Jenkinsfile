@@ -11,7 +11,7 @@ pipeline {
 
   parameters {
     choice(name: 'DEPLOY_TO',
-           choices: ['master', 'qa', 'aws'],
+           choices: ['master', 'qa'],
            description: 'Choose deployment environment')
   }
 
