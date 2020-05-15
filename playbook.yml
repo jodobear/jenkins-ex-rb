@@ -24,7 +24,7 @@
 
     - name: copy artifact
       copy:
-        src: web.rb
+        src: ./web.rb
         backup: yes
         force: yes
         dest: "{{home_folder}}/deployment/web.rb"
