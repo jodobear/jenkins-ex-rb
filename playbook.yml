@@ -18,12 +18,6 @@
         src: web.rb.service.j2
         dest: /etc/systemd/system/ruby.service
 
-    - name: Create a directory if it does not exist
-      file:
-        path: /home/vagrant
-        state: directory
-        mode: '0755'
-
     - name: copy artifact
       copy:
         src: web.rb
