@@ -1,4 +1,4 @@
-def mapBranch = ["master": "production,
+def mapBranch = ["master": "production",
                   "qa": "qa"]
 
 pipeline {
