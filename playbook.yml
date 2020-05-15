@@ -29,13 +29,9 @@
         src: web.rb
         backup: yes
         force: yes
-        dest: "{{home_folder}}/deployment/"
+        dest: "{{home_folder}}/deployment/web.rb"
         mode: '0777'
     
-    - name: check contents
-      debug:
-      command: "ls {{home_folder}}/deployment"
-
     - name: enable and start service
       become: yes
       systemd:
